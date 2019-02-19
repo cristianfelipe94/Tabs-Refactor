@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,mBAAoB;EACnB,OAAO,EAAE,IAAI;;AAGd,oBAAqB;EACpB,OAAO,EAAE,KAAK;;ACLf,aAAc;EACb,OAAO,EAAE,YAAY;EACrB,WAAW,EAAE,EAAE",
+"sources": ["../sass/Tab-Container/Content/_content.scss","../sass/Tab-Container/Tabs/_tabs.scss"],
 "names": [],
 "file": "style.css"
 }
