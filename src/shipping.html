@@ -8,7 +8,7 @@
     <title>Refactor tabs</title>
 </head>
 <body>
-		<div>
+		<div class="inner-body-width">
 			<h2>
 				How do you want to send your return?
 			</h2>
@@ -16,8 +16,8 @@
 				Returns can be shipped with a flat-rate UPS label or by your choice of package carrier.
 			</p>
 
-			<div>
-				<ul>
+			<div class="ui-shipping-container">
+				<ul class="ui-tabs-nav">
 					<li>
 						<a href="#">Flat Rate UPS Label
 							<span>
@@ -35,7 +35,7 @@
 					</li>
 				</ul>
 
-				<div>
+				<div id="tab-1" class="tab-content">
 					<p>
 						Click Print UPS Label, attach the label to your return package, and drop the package off at a UPS location. Use the
 						<a href="https://www.ups.com/dropoff" target="_blank">
@@ -47,11 +47,11 @@
 						If your return qualifies for a refund, we will reimburse you the refund amount via your original payment method, minus $6.99 for the UPS label.
 					</p>
 
-					<a href="#">
+					<a href="#" class="btn-primary">
 						Print UPS Label
 					</a>
 
-					<ol>
+					<ol class="steps-position">
 						<li>
 							Package your return in a box
 						</li>
@@ -68,11 +68,11 @@
 						</li>
 					</ol>
 
-					<p>* USA only</p>
+					<p class="ui-warning-color">* USA only</p>
 				</div>
 
-				<div>
-					<ol>
+				<div id="tab-2" class="tab-content">
+					<ol class="steps-position">
 						<li>
 							Package your return in a box
 						</li>
@@ -80,12 +80,12 @@
 							Write Return Number on box
 						</li>
 						<li>
-							Mail to <span>competitivecyclist.com</span>
+							Mail to <span class="shipping-url-bold">competitivecyclist.com</span>
 						</li>
 					</ol>
 
-					<div>
-						<ul>
+					<div class="left-column">
+						<ul class="instructions-position">
 							<li>
 								Pack everything up, including tags and the original invoice (or printout of this page).
 							</li>
@@ -97,8 +97,8 @@
 							</li>
 						</ul>
 
-						<div>
-							<p>
+						<div class="address-position">
+							<p class="shipping-url-bold">
 								competitivecyclist.com
 							</p>
 
@@ -112,8 +112,8 @@
 						</div>
 					</div>
 
-					<div>
-						<div>
+					<div  class="right-column">
+						<div class="ui-content-column">
 							<p>
 								Make sure to mark your box with the Return Number
 							</p>
@@ -127,12 +127,12 @@
 							</p>
 						</div>
 
-						<p>
+						<p class="ui-warning-color">
 							* We recommend you insure and send via Parcel Post or UPS. COD not accepted.
 						</p>
 					</div>
 
-					<p>
+					<p class="notice-position">
 						Need more information about our returns policy, returns shipping, or making a return? Visit the <a href="#">Returns Help Page.</a>
 					</p>
 				</div>
