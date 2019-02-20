@@ -1,7 +1,50 @@
+.ui-tabs-nav {
+	position: relative;
+	height: 70vh;
+}
+
+.ui-tab {
+	position: relative;
+	list-style: none;
+}
+
+.tab-position-left {
+	position: absolute;
+	left: 20%;
+}
+
+.tab-position-right {
+	position: absolute;
+	right: 20%;
+}
+
 .tab-content-hidden {
 	display: none;
 }
 
 .tab-content-showing {
 	display: block;
+	position: absolute;
+	top: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+	.ui-tab {
+		position: unset;
+	}
+	
+	.tab-position-left {
+		position: unset;
+	}
+	
+	.tab-position-right {
+		position: unset;
+	}
+
+	.tab-content-showing {
+		height: 200px;
+		overflow: hidden;
+		overflow-y: auto;
+		position: unset;
+	}
 }
