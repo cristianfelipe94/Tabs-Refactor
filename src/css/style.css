@@ -1,3 +1,21 @@
+.tab-content-hidden {
+  display: none; }
+
+.tab-content-showing {
+  display: block;
+  position: absolute;
+  top: 25px; }
+
+@media only screen and (max-width: 600px) {
+  .tab-content-showing {
+    height: 200px;
+    overflow: hidden;
+    overflow-y: auto;
+    position: unset; } }
+.ui-tab-width {
+  display: inline-block;
+  margin-left: 2%; }
+
 .ui-tabs-nav {
   position: relative;
   height: 70vh; }
@@ -8,19 +26,11 @@
 
 .tab-position-left {
   position: absolute;
-  left: 20%; }
+  left: 10%; }
 
 .tab-position-right {
   position: absolute;
-  right: 20%; }
-
-.tab-content-hidden {
-  display: none; }
-
-.tab-content-showing {
-  display: block;
-  position: absolute;
-  top: 25px; }
+  right: 10%; }
 
 @media only screen and (max-width: 600px) {
   .ui-tab {
@@ -30,15 +40,6 @@
     position: unset; }
 
   .tab-position-right {
-    position: unset; }
-
-  .tab-content-showing {
-    height: 200px;
-    overflow: hidden;
-    overflow-y: auto;
     position: unset; } }
-.ui-tab-width {
-  display: inline-block;
-  margin-left: 2%; }
 
 /*# sourceMappingURL=style.css.map */

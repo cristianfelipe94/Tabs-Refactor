@@ -2,3 +2,37 @@
 	display: inline-block;
 	margin-left: 2%;
 }
+
+.ui-tabs-nav {
+	position: relative;
+	height: 70vh;
+}
+
+.ui-tab {
+	position: relative;
+	list-style: none;
+}
+
+.tab-position-left {
+	position: absolute;
+	left: 10%;
+}
+
+.tab-position-right {
+	position: absolute;
+	right: 10%;
+}
+
+@media only screen and (max-width: 600px) {
+	.ui-tab {
+		position: unset;
+	}
+	
+	.tab-position-left {
+		position: unset;
+	}
+	
+	.tab-position-right {
+		position: unset;
+	}
+}
