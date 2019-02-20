@@ -1,30 +1,34 @@
 const shippingContainer = document.querySelectorAll('.ui-shipping-container');
 
-for (const elements of shippingContainer) {
-	const tabsElements = elements.querySelectorAll('ul > li > a');
-	const hiddenContent = elements.querySelectorAll('div .tab-content-hidden');
-	const showingContent = elements.querySelectorAll('div .tab-content-showing');
+shippingContainer.forEach((shippingElements) => {
+  const elementsContainer = shippingElements;
+  const tabsElements = shippingElements.querySelectorAll('ul > li > a');
+  const hiddenContent = shippingElements.querySelectorAll('div .tab-content-hidden');
+  const showingContent = shippingElements.querySelectorAll('div .tab-content-showing');
 
-	function clearClass() {
-		for (const content of hiddenContent) {
-			content.className = 'tab-content-hidden';
-		}
-		for (const content of showingContent) {
-			content.className = 'tab-content-hidden';
-		}
-	}
+  function clearClass() {
+    hiddenContent.forEach((hiddenElement) => {
+      const cleanHideElement = hiddenElement;
+      cleanHideElement.className = 'tab-content-hidden';
+    });
+    showingContent.forEach((showingElement) => {
+      const cleanShowingElement = showingElement;
+      cleanShowingElement.className = 'tab-content-hidden';
+    });
+  }
 
-	function setDefault (tabsToDisplay) {
-		tabsToDisplay[0].className = 'tab-content-showing';
-	}
-	setDefault(hiddenContent);
+  function setDefault(tabsToDisplay) {
+    const defaultContent = tabsToDisplay;
+    defaultContent[0].className = 'tab-content-showing';
+  }
+  setDefault(hiddenContent);
 
-	for (const links of tabsElements) {
-		links.addEventListener('click', function getHref(event) {
-			clearClass();
-			const elementHref = event.target.getAttribute('href');
-			const tabsContent = elements.querySelector(elementHref);
-			tabsContent.className = 'tab-content-showing';
-		});
-	}
-}
+  tabsElements.forEach((element) => {
+    element.addEventListener('click', function (event) {
+      clearClass();
+      const elementHref = event.target.getAttribute('href');
+      const tabsContent = elementsContainer.querySelector(elementHref);
+      tabsContent.className = 'tab-content-showing';
+    });
+  });
+});
